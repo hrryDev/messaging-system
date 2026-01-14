@@ -8,10 +8,17 @@
 #include <queue>
 #include <vector>
 
+/**
+ * @class Process
+ * @brief Handles threads for receiving and processing messages.
+ *
+ * Simulates a system that receives messages at a rate of 2Hz and prioritises them based on a timestamp.
+ * Once current time progresses to a point where the message needs to be processed, one of the processing threads processes it.
+ */
 class Process {
 	public:
 		/**
-		 * Starts the message processing system.
+		 * @brief Starts the message processing system.
 		 *
 		 * @param num_processing_threads How many threads to spawn for processing the messages.
 		 */
