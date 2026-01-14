@@ -13,4 +13,5 @@ add_executable(system)
 target_sources(system
   PRIVATE
 	src/main.cpp
+	src/process.cpp
 )
